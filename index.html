@@ -103,7 +103,7 @@
 </blockquote>
 <h2 id="01-平面转换"><a href="#01-平面转换" class="headerlink" title="01-平面转换"></a>01-平面转换</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>作用：为元素添加动态效果，一般与过渡配合使用</p>
 <p>概念：改变盒子在平面内的形态（位移、旋转、缩放、倾斜）</p>
-<p><img src="D:\BlogFile\source\assets\1681357773327.png" alt="1681357773327"></p>
+<p><img src="/../assets%5C1681357773327.png" alt="1681357773327"></p>
 <p>平面转换也叫 2D 转换，属性是 <strong>transform</strong></p>
 <h3 id="平移"><a href="#平移" class="headerlink" title="平移"></a>平移</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(X轴移动距离, Y轴移动距离);</span><br></pre></td></tr></table></figure>
 
@@ -123,12 +123,12 @@
 <h3 id="定位居中"><a href="#定位居中" class="headerlink" title="定位居中"></a>定位居中</h3><ul>
 <li>方法一：margin</li>
 </ul>
-<p><img src="D:\BlogFile\source\assets\1681358064880.png" alt="1681358064880"></p>
+<p><img src="/../assets%5C1681358064880.png" alt="1681358064880"></p>
 <ul>
 <li>方法二：平移 → 百分比参照盒子自身尺寸计算结果</li>
 </ul>
-<p><img src="D:\BlogFile\source\assets\1681358076134.png" alt="1681358076134"></p>
-<h3 id="案例-双开门"><a href="#案例-双开门" class="headerlink" title="案例-双开门"></a>案例-双开门</h3><p><img src="D:\BlogFile\source\assets\1681358110583.png" alt="1681358110583"></p>
+<p><img src="/../assets%5C1681358076134.png" alt="1681358076134"></p>
+<h3 id="案例-双开门"><a href="#案例-双开门" class="headerlink" title="案例-双开门"></a>案例-双开门</h3><p><img src="/../assets%5C1681358110583.png" alt="1681358110583"></p>
 <ul>
 <li>HTML 结构</li>
 </ul>
@@ -161,7 +161,7 @@
 <li>像素单位数值</li>
 <li>百分比</li>
 </ul>
-<h3 id="案例-时钟"><a href="#案例-时钟" class="headerlink" title="案例-时钟"></a>案例-时钟</h3><p><img src="D:\BlogFile\source\assets\1681358351628.png" alt="1681358351628"></p>
+<h3 id="案例-时钟"><a href="#案例-时钟" class="headerlink" title="案例-时钟"></a>案例-时钟</h3><p><img src="/../assets%5C1681358351628.png" alt="1681358351628"></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hour</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#333</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">3px</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">15deg</span>);</span><br><span class="line">  <span class="attribute">transform-origin</span>: center bottom;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.minute</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">65px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#333</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">3px</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">90deg</span>);</span><br><span class="line">  <span class="attribute">transform-origin</span>: center bottom;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.second</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: red;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">240deg</span>);</span><br><span class="line">  <span class="attribute">transform-origin</span>: center bottom;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="多重转换"><a href="#多重转换" class="headerlink" title="多重转换"></a>多重转换</h3><p>多重转换技巧：先平移再旋转</p>
@@ -183,7 +183,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="案例-播放特效"><a href="#案例-播放特效" class="headerlink" title="案例-播放特效"></a>案例-播放特效</h3><p><img src="D:\BlogFile\source\assets\1681358481436.png" alt="1681358481436"></p>
+<h3 id="案例-播放特效"><a href="#案例-播放特效" class="headerlink" title="案例-播放特效"></a>案例-播放特效</h3><p><img src="/../assets%5C1681358481436.png" alt="1681358481436"></p>
 <ul>
 <li>CSS 样式</li>
 </ul>
@@ -197,11 +197,11 @@
 <ul>
 <li>线性渐变</li>
 </ul>
-<p><img src="D:\BlogFile\source\assets\1681358603090.png" alt="1681358603090"></p>
+<p><img src="/../assets%5C1681358603090.png" alt="1681358603090"></p>
 <ul>
 <li>径向渐变</li>
 </ul>
-<p><img src="D:\BlogFile\source\assets\1681358608036.png" alt="1681358608036"></p>
+<p><img src="/../assets%5C1681358608036.png" alt="1681358608036"></p>
 <h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(</span><br><span class="line">  渐变方向,</span><br><span class="line">  颜色<span class="number">1</span> 终点位置,</span><br><span class="line">  颜色<span class="number">2</span> 终点位置,</span><br><span class="line">  ......</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 
 <p>取值：</p>
@@ -216,7 +216,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="案例-产品展示"><a href="#案例-产品展示" class="headerlink" title="案例-产品展示"></a>案例-产品展示</h3><p><img src="D:\BlogFile\source\assets\1681358757636.png" alt="1681358757636"></p>
+<h3 id="案例-产品展示"><a href="#案例-产品展示" class="headerlink" title="案例-产品展示"></a>案例-产品展示</h3><p><img src="/../assets%5C1681358757636.png" alt="1681358757636"></p>
 <ul>
 <li>HTML 结构</li>
 </ul>
@@ -234,7 +234,7 @@
 <li>半径可以是2条，则为椭圆</li>
 <li>圆心位置取值：像素单位数值 &#x2F; 百分比 &#x2F; 方位名词</li>
 </ul>
-<h2 id="03-综合案例"><a href="#03-综合案例" class="headerlink" title="03-综合案例"></a>03-综合案例</h2><p><img src="D:\BlogFile\source\assets\1681365549936.png" alt="1681365549936"></p>
+<h2 id="03-综合案例"><a href="#03-综合案例" class="headerlink" title="03-综合案例"></a>03-综合案例</h2><p><img src="/../assets%5C1681365549936.png" alt="1681365549936"></p>
 <h3 id="导航-频道"><a href="#导航-频道" class="headerlink" title="导航-频道"></a>导航-频道</h3><h4 id="箭头旋转"><a href="#箭头旋转" class="headerlink" title="箭头旋转"></a>箭头旋转</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.x-header-nav</span> <span class="selector-class">.nav-item</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.icon-down</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(-<span class="number">180deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="频道列表"><a href="#频道列表" class="headerlink" title="频道列表"></a>频道列表</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.channel-layer</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">60px</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: -<span class="number">2</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1080px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">540px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#72727b</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#e4e4e4</span>;</span><br><span class="line">  <span class="attribute">border-top</span>: none;</span><br><span class="line">  <span class="attribute">transition</span>: all <span class="number">0.5s</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-<span class="number">120px</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* TODO 2. 弹窗频道 */</span></span><br><span class="line"><span class="selector-class">.x-header-nav</span> <span class="selector-class">.nav-item</span><span class="selector-pseudo">:hover</span> <span class="selector-class">.channel-layer</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -498,12 +498,12 @@
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// out: ./index.css</span></span><br><span class="line"><span class="comment">// out: ./css/</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="禁止导出"><a href="#禁止导出" class="headerlink" title="禁止导出"></a>禁止导出</h3><p>写法：在 less 文件第一行添加:  &#x2F;&#x2F; out: false </p>
-<p><img src="/../assets%5C1681811772496.png" alt="1681811772496"></p>
+<p><img src="/../assets/1681811772496.png" alt="1681811772496"></p>
 <h2 id="04-综合案例-极速问诊"><a href="#04-综合案例-极速问诊" class="headerlink" title="04-综合案例-极速问诊"></a>04-综合案例-极速问诊</h2><p><img src="/../assets/1681811796608.png" alt="1681811796608"></p>
 <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
 <li>项目目录</li>
 </ul>
-<p><img src="/../assets%5C1681811827562.png" alt="1681811827562"></p>
+<p><img src="/../assets/1681811827562.png" alt="1681811827562"></p>
 <ul>
 <li>HTML 结构</li>
 </ul>
@@ -726,7 +726,7 @@
 <h2 id="02-Bootstrap"><a href="#02-Bootstrap" class="headerlink" title="02-Bootstrap"></a>02-Bootstrap</h2><h3 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h3><p>Bootstrap 是由 Twitter 公司开发维护的前端 UI 框架，它提供了大量编写好的 CSS 样式，允许开发者结合一定 HTML 结构及JavaScript，快速编写功能完善的网页及常见交互效果。 </p>
 <p>中文官网: <a target="_blank" rel="noopener" href="https://www.bootcss.com/">https://www.bootcss.com/</a> </p>
 <h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>下载：Bootstrap V5中文文档 → 进入中文文档 → 下载 →下载 Bootstrap 生产文件</p>
-<p><img src="/../assets%5C1682668529209.png" alt="1682668529209"></p>
+<p><img src="/../assets/1682668529209.png" alt="1682668529209"></p>
 <h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><ol>
 <li>引入 Bootstrap CSS 文件</li>
 </ol>
