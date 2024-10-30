@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>git | 风雨雷</title><meta name="author" content="Lei"><meta name="copyright" content="Lei"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="git何为git?git是一个分布式版本控制系统      (这话听起来很高大上，不懂没事) 什么是版本控制系统呢？ 它是一种用于管理软件代码或其他文件变更的工具 简单来说，就是用于管理代码的仓库，它可以记录文件的修改历史，回溯到之前的版本，这样我们就不需要将代码复制一份保存好，在下一次修改后发现一堆错误然后想用上一次的旧版本，去找自己原来保存的（如果项目很大，这将会非常麻烦）。 版本控制系统有两">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git">
+<meta property="og:url" content="http://example.com/2024/10/24/git/index.html">
+<meta property="og:site_name" content="风雨雷">
+<meta property="og:description" content="git何为git?git是一个分布式版本控制系统      (这话听起来很高大上，不懂没事) 什么是版本控制系统呢？ 它是一种用于管理软件代码或其他文件变更的工具 简单来说，就是用于管理代码的仓库，它可以记录文件的修改历史，回溯到之前的版本，这样我们就不需要将代码复制一份保存好，在下一次修改后发现一堆错误然后想用上一次的旧版本，去找自己原来保存的（如果项目很大，这将会非常麻烦）。 版本控制系统有两">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/touXiang.jpeg">
+<meta property="article:published_time" content="2024-10-24T11:13:26.000Z">
+<meta property="article:modified_time" content="2024-10-25T02:50:07.868Z">
+<meta property="article:author" content="Lei">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/touXiang.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/24/git/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'git',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-25 10:50:07'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/touXiang.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="风雨雷"><img class="site-icon" src="/images/Lei_Logo.jpg"/><span class="site-name">风雨雷</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">git</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-24T11:13:26.000Z" title="发表于 2024-10-24 19:13:26">2024-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-25T02:50:07.868Z" title="更新于 2024-10-25 10:50:07">2024-10-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="git"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h2 id="何为git"><a href="#何为git" class="headerlink" title="何为git?"></a>何为git?</h2><p>git是一个分布式版本控制系统      (这话听起来很高大上，不懂没事)</p>
+<p><strong>什么是版本控制系统呢？</strong></p>
+<p>它是一种用于管理软件代码或其他文件变更的工具</p>
+<p>简单来说，就是用于管理代码的仓库，它可以记录文件的修改历史，回溯到之前的版本，这样我们就不需要将代码复制一份保存好，在下一次修改后发现一堆错误然后想用上一次的旧版本，去找自己原来保存的（如果项目很大，这将会非常麻烦）。</p>
+<p>版本控制系统有两中：</p>
+<p>1.集中式CVCS  Centeralized Version Control System</p>
+<p>所有的版本数据保存在一个中央服务器上，使用简单，但是有一个最大的弊端：<strong>单点故障问题</strong>，如果中央服务器或网络出现问题，那么所有人就无法工作了</p>
+<p>2.分布式DVCS  Distributed Version Control System</p>
+<p>每个开发者都有完整的代码库副本,而且拥有完整的代码库历史，操作相比复杂，但即使没有网络连接，开发者也可以继续工作</p>
+<h2 id="git的原理（可以不看，会用就行）"><a href="#git的原理（可以不看，会用就行）" class="headerlink" title="git的原理（可以不看，会用就行）"></a>git的原理（可以不看，会用就行）</h2><h3 id="git-的数据存储"><a href="#git-的数据存储" class="headerlink" title="git 的数据存储"></a>git 的数据存储</h3><p>git的核心是数据存储模型，叫做快照流</p>
+<p> <strong>什么是快照？</strong></p>
+<p>快照是包含当前版本所有文件和目录 的一个完整副本</p>
+<p>每次提交时，git会创建当前版本的快照并存储一个指向该快照的指针，如果有的文件没有发生变化，git不会存储文件的新副本，而是链接到之前的快照</p>
+<p>与传统的基于差异(diff)的版本控制系统不同，git每次保存的是快照,而其他版本控制系统仅仅是存储文件的差异(diff)</p>
+<p><strong>对象</strong></p>
+<p>git通过对象来存储数据，有四种对象类型：</p>
+<p>**1.blob(文件内容)**：存储文件内容的二进制数据</p>
+<p>**2.tree(目录结构和文件名)**：存储目录结构(文件和子目录)的信息</p>
+<p>**3.commit(提交信息和父提交)**：存储提交信息，作者，时间戳，指向父提交的指针</p>
+<p>**4.tag(标签)**：存储标签信息，通常用于标记重要的提交</p>
+<h3 id="git-的工作流程"><a href="#git-的工作流程" class="headerlink" title="git 的工作流程"></a>git 的工作流程</h3><p>分成四个区域：工作区，暂存区，本地仓库，远程仓库</p>
+<h4 id="工作区："><a href="#工作区：" class="headerlink" title="工作区："></a>工作区：</h4><p>该项目的所有文件（存放于本地文件系统里面的）</p>
+<h4 id="暂存区："><a href="#暂存区：" class="headerlink" title="暂存区："></a>暂存区：</h4><p>作为一个缓冲的区域，存储了准备在下次提交的文件变更，通过<code>git add</code>将文件从工作区添加到暂存区</p>
+<h4 id="本地仓库："><a href="#本地仓库：" class="headerlink" title="本地仓库："></a>本地仓库：</h4><p>存储所有版本历史记录的地方，通过<code>git commit</code> 提交</p>
+<h4 id="远程仓库："><a href="#远程仓库：" class="headerlink" title="远程仓库："></a>远程仓库：</h4><p>通常在服务器上面（github，gitLab）可以通过<code>git pull</code>远程仓库里面的文件变更内容拉取到本地仓库，用<code>git push</code>将本地仓库的变更内容推送到远程仓库</p>
+<h3 id="文件的状态"><a href="#文件的状态" class="headerlink" title="文件的状态"></a>文件的状态</h3><h4 id="Untracked-未追踪"><a href="#Untracked-未追踪" class="headerlink" title="Untracked(未追踪)"></a>Untracked(未追踪)</h4><p>新添加的文件，还没有被git管理</p>
+<h4 id="Unmodified-未修改"><a href="#Unmodified-未修改" class="headerlink" title="Unmodified(未修改)"></a>Unmodified(未修改)</h4><p>文件被git管理，且自从上次提交以来没有修改</p>
+<h4 id="Modified-已修改"><a href="#Modified-已修改" class="headerlink" title="Modified(已修改)"></a>Modified(已修改)</h4><p>文件已经被修改，但尚未添加到暂存区</p>
+<h4 id="Staged-已暂存"><a href="#Staged-已暂存" class="headerlink" title="Staged(已暂存)"></a>Staged(已暂存)</h4><p>文件已经被修改并且添加到暂存区，准备在下一次提交中提交</p>
+<h2 id="git该怎么使用"><a href="#git该怎么使用" class="headerlink" title="git该怎么使用"></a>git该怎么使用</h2><p>使用方式：</p>
+<p>1.命令行</p>
+<p>2.图形化界面(GUI)（在解决合并冲突时很好用）</p>
+<p>3.IDE插件或扩展</p>
+<p><strong>省略git的安装</strong></p>
+<h3 id="git的配置"><a href="#git的配置" class="headerlink" title="git的配置"></a>git的配置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的名字&quot;</span><br><span class="line">git config --global user.email &quot;你的邮箱地址&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-创建一个仓库"><a href="#1-创建一个仓库" class="headerlink" title="1.创建一个仓库"></a>1.创建一个仓库</h4><h5 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h5 id="克隆现有仓库"><a href="#克隆现有仓库" class="headerlink" title="克隆现有仓库"></a>克隆现有仓库</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;respsitory_url&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="添加和提交"><a href="#添加和提交" class="headerlink" title="添加和提交"></a>添加和提交</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;file&gt;          # 添加单个文件</span><br><span class="line">git add .               # 添加当前目录下的所有更改文件</span><br><span class="line">git commit -m &quot;提交信息&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看版本历史"><a href="#查看版本历史" class="headerlink" title="查看版本历史"></a>查看版本历史</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+
+<h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><p>暂且不说</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Lei</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/24/git/">http://example.com/2024/10/24/git/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">风雨雷</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/git/">git</a></div><div class="post_share"><div class="social-share" data-image="/images/touXiang.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/10/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">操作系统</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/15/loginPage1/" title="loginPage1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">loginPage1</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/touXiang.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lei</div><div class="author-info__description">描述</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#git"><span class="toc-number">1.</span> <span class="toc-text">git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%95%E4%B8%BAgit"><span class="toc-number">1.1.</span> <span class="toc-text">何为git?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%9A%84%E5%8E%9F%E7%90%86%EF%BC%88%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%9C%8B%EF%BC%8C%E4%BC%9A%E7%94%A8%E5%B0%B1%E8%A1%8C%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">git的原理（可以不看，会用就行）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git-%E7%9A%84%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8"><span class="toc-number">1.2.1.</span> <span class="toc-text">git 的数据存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git-%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.2.2.</span> <span class="toc-text">git 的工作流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA%EF%BC%9A"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">工作区：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9A%82%E5%AD%98%E5%8C%BA%EF%BC%9A"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">暂存区：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">本地仓库：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">远程仓库：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E7%8A%B6%E6%80%81"><span class="toc-number">1.2.3.</span> <span class="toc-text">文件的状态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Untracked-%E6%9C%AA%E8%BF%BD%E8%B8%AA"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">Untracked(未追踪)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Unmodified-%E6%9C%AA%E4%BF%AE%E6%94%B9"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">Unmodified(未修改)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Modified-%E5%B7%B2%E4%BF%AE%E6%94%B9"><span class="toc-number">1.2.3.3.</span> <span class="toc-text">Modified(已修改)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Staged-%E5%B7%B2%E6%9A%82%E5%AD%98"><span class="toc-number">1.2.3.4.</span> <span class="toc-text">Staged(已暂存)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E8%AF%A5%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">git该怎么使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.1.</span> <span class="toc-text">git的配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">1.创建一个仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E4%BB%93%E5%BA%93"><span class="toc-number">1.3.1.1.1.</span> <span class="toc-text">创建新仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E7%8E%B0%E6%9C%89%E4%BB%93%E5%BA%93"><span class="toc-number">1.3.1.1.2.</span> <span class="toc-text">克隆现有仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%92%8C%E6%8F%90%E4%BA%A4"><span class="toc-number">1.3.1.1.3.</span> <span class="toc-text">添加和提交</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">查看版本历史</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">分支管理</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/28/%E5%95%86%E5%9F%8EAPP/" title="商城APP">商城APP</a><time datetime="2024-10-28T13:43:46.000Z" title="发表于 2024-10-28 21:43:46">2024-10-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">操作系统</a><time datetime="2024-10-25T12:12:29.000Z" title="发表于 2024-10-25 20:12:29">2024-10-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/24/git/" title="git">git</a><time datetime="2024-10-24T11:13:26.000Z" title="发表于 2024-10-24 19:13:26">2024-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/15/loginPage1/" title="loginPage1">loginPage1</a><time datetime="2024-10-15T14:20:19.000Z" title="发表于 2024-10-15 22:20:19">2024-10-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/23/Ajax/" title="Ajax">Ajax</a><time datetime="2024-09-23T12:27:29.000Z" title="发表于 2024-09-23 20:27:29">2024-09-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Lei</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
